@@ -1,5 +1,5 @@
 const cornholeSchema = {
-    host: "dslusser.com",
+    host: "localhost",
     user: "user",
     password: "strongPassword",
     database: "cornhole"
