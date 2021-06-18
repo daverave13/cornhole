@@ -20,8 +20,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api/games", require("./routes/api/games"));
+app.use("/api/teams", require("./routes/api/teams"));
 
 const PORT = process.env.PORT || 5000;
+
+// app.listen(PORT);
+
 
 //Listen both http & https ports
 const httpsServer = https.createServer({
